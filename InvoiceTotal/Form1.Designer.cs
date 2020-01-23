@@ -45,7 +45,7 @@
       this.btnCalc.Location = new System.Drawing.Point(35, 227);
       this.btnCalc.Name = "btnCalc";
       this.btnCalc.Size = new System.Drawing.Size(122, 39);
-      this.btnCalc.TabIndex = 0;
+      this.btnCalc.TabIndex = 1;
       this.btnCalc.Text = "Calculate";
       this.btnCalc.UseVisualStyleBackColor = true;
       // 
@@ -54,7 +54,7 @@
       this.btnExit.Location = new System.Drawing.Point(217, 227);
       this.btnExit.Name = "btnExit";
       this.btnExit.Size = new System.Drawing.Size(122, 39);
-      this.btnExit.TabIndex = 1;
+      this.btnExit.TabIndex = 2;
       this.btnExit.Text = "Exit";
       this.btnExit.UseVisualStyleBackColor = true;
       // 
@@ -99,7 +99,7 @@
       this.txtSubtotal.Location = new System.Drawing.Point(223, 12);
       this.txtSubtotal.Name = "txtSubtotal";
       this.txtSubtotal.Size = new System.Drawing.Size(136, 31);
-      this.txtSubtotal.TabIndex = 6;
+      this.txtSubtotal.TabIndex = 0;
       // 
       // txtTotal
       // 
@@ -108,6 +108,7 @@
       this.txtTotal.ReadOnly = true;
       this.txtTotal.Size = new System.Drawing.Size(136, 31);
       this.txtTotal.TabIndex = 7;
+      this.txtTotal.TabStop = false;
       // 
       // txtDiscountAmount
       // 
@@ -116,6 +117,7 @@
       this.txtDiscountAmount.ReadOnly = true;
       this.txtDiscountAmount.Size = new System.Drawing.Size(136, 31);
       this.txtDiscountAmount.TabIndex = 8;
+      this.txtDiscountAmount.TabStop = false;
       // 
       // txtDiscountPercent
       // 
@@ -124,6 +126,7 @@
       this.txtDiscountPercent.ReadOnly = true;
       this.txtDiscountPercent.Size = new System.Drawing.Size(136, 31);
       this.txtDiscountPercent.TabIndex = 9;
+      this.txtDiscountPercent.TabStop = false;
       // 
       // Form1
       // 
