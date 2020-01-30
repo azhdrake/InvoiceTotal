@@ -21,26 +21,26 @@ namespace InvoiceTotal
     {
       //gets contents of the subtotal box.
         //Data validation is for suckers.
-      double subtotal = Convert.ToDouble(txtSubtotal.Text);
+      double invoiceSubtotal = Convert.ToDouble(txtSubtotal.Text);
       double discountPercent = 0;
 
       //caculates what the discount percent should be 
-      if(subtotal >= 100)
+      if(invoiceSubtotal >= 500)
       {
         discountPercent = 0.2;
       }
-      else if(subtotal >= 250 && subtotal < 500)
+      else if(invoiceSubtotal >= 250 && invoiceSubtotal < 500)
       {
         discountPercent = 0.15;
       }
-      else
+      else if (invoiceSubtotal >= 100 && invoiceSubtotal < 250)
       {
         discountPercent = 0.1;
       }
 
       //caculates the invoice total
-      double discountAmount = subtotal * discountPercent;
-      double invoiceTotal = subtotal - discountAmount;
+      double discountAmount = invoiceSubtotal * discountPercent;
+      double invoiceTotal = invoiceSubtotal - discountAmount;
 
       //assigns calculated values to text boxes.
       txtDiscountPercent.Text = discountPercent.ToString("p1");
